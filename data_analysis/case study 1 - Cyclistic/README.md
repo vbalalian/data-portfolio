@@ -1,5 +1,7 @@
 ### Google Data Analytics Coursera course case study
-<center>![Cyclistic](https://miro.medium.com/v2/resize:fit:586/format:webp/1*ddC1KfTAHBXjmGseS2drRw.png)</center>
+<center>
+![Cyclistic](https://miro.medium.com/v2/resize:fit:586/format:webp/1*ddC1KfTAHBXjmGseS2drRw.png)
+</center>
 <br>
 <b>"About the company</b>
 <br><br>
