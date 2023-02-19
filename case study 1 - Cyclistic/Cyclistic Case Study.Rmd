@@ -24,6 +24,7 @@ The data itself can be found [here](https://divvy-tripdata.s3.amazonaws.com/inde
 ```{r environment setup, message=FALSE, warning=FALSE}
 library(tidyverse)
 library(skimr)
+library(lubridate)
 ```
 #### Data Import
 ```{r importing data, message=FALSE, warning=FALSE}
@@ -80,15 +81,16 @@ The following chunk creates a new dataframe, df2, which calculates values for ri
 
 ```{r initial transformation}
 df2 <- df %>% 
-  mutate(ride_time=ended_at-started_at,
+  mutate(ride_time=seconds_to_period(ended_at-started_at),
          lat_diff=round(abs(start_lat-end_lat)*69, digits=6), 
          lng_diff=round(abs(start_lng-end_lng)*52, digits=6),
          ride_distance=round(abs(lat_diff+lng_diff), digits=6),
+         day_of_week=wday(df$started_at, label=TRUE)
          ) %>% 
     select(-file_name, -ride_id, -end_lat, -end_lng, -lat_diff, 
            -lng_diff)
 # reorder for a more favorable view
-df2 <- df2[,c(1, 10, 11, 12, 2, 3, 5, 7, 4, 6, 8, 9)]
+df2 <- df2[,c(1, 10, 11, 12, 13, 2, 3, 5, 7, 4, 6, 8, 9)]
 head(df2)
 ```
 
