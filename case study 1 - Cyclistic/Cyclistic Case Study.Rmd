@@ -51,15 +51,15 @@ The dataset is very long (over 5 million rows), but not too wide, especially con
 #### Exploratory Analysis
 Let's check out the two primary categorical values: rideable_type, and member_casual, and count the number of values based on a few different groupings.
 ```{r}
-rides_and_riders_count <- count(df, rideable_type, member_casual) %>% 
+riders_and_rideables_count <- count(df, rideable_type, member_casual) %>%
   arrange(desc(n))
-rides_count <- count(df, rideable_type) %>% 
+rideables_count <- count(df, rideable_type) %>% 
   arrange(desc(n))
 riders_count <- count(df, member_casual) %>% 
   arrange(desc(n))
-rides_and_riders_count
-rides_count
 riders_count
+rideables_count
+riders_and_rideables_count
 ```
 So far, the data has no noticeable errors, and is easy to work with.
 
