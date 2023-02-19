@@ -50,7 +50,7 @@ The dataset is very long (over 5 million rows), but not too wide, especially con
 
 #### Exploratory Analysis
 Let's check out the two primary categorical values: rideable_type, and member_casual, and count the number of values based on a few different groupings.
-```{r}
+```{r rideables and rider counts}
 riders_and_rideables_count <- count(df, rideable_type, member_casual) %>%
   arrange(desc(n))
 rideables_count <- count(df, rideable_type) %>% 
@@ -65,14 +65,30 @@ So far, the data has no noticeable errors, and is easy to work with.
 
 #### Transforming Data
 
-Since there's not much cleaning needed to work with this dataset, let's continue transforming the original dataframe into different forms that will be useful for later analysis and visualization.   
+Since there's not much cleaning needed to work with this dataset, let's continue transforming the original dataframe into different forms that will be useful for later analysis and visualization.
+<br><br>
+First, let's see if we can get an accurate conversion of distance. 
+<br><br>
+According to usgs.gov, distance between latitudes is fairly constant, but distance between longitudes varies depending on the latitude. Let's take a look at the latitudes of each ride and see if there's much variation.
+```{r latitude check, message=FALSE}
+ggplot(data=df, mapping=aes(x=start_lat)) +
+  geom_histogram()
+```
+Since the distribution of latitudes is so visibly narrow, we can assume that our distance conversions will be more than accurate enough for the purposes of this analysis. Therefore, let's create a new variable, ride_distance, in miles. 
+<br><br>
+The following chunk creates a new dataframe, df2, which calculates values for ride_time and ride_distance based on the available location data; then removes some clutter among columns.
 
-```{r}
+```{r initial transformation}
 df2 <- df %>% 
   mutate(ride_time=ended_at-started_at,
-         lat_diff=round(abs(start_lat-end_lat), digits=6), 
-         lng_diff=round(abs(start_lng-end_lng), digits=6),
-         tot_diff=round(abs(lat_diff-lng_diff), digits=6),
+         lat_diff=round(abs(start_lat-end_lat)*69, digits=6), 
+         lng_diff=round(abs(start_lng-end_lng)*52, digits=6),
+         ride_distance=round(abs(lat_diff+lng_diff), digits=6),
          ) %>% 
-    select(-file_name, -ride_id, -start_lat, -start_lng, -end_lat, -end_lng)
+    select(-file_name, -ride_id, -end_lat, -end_lng, -lat_diff, 
+           -lng_diff)
+# reorder for a more favorable view
+df2 <- df2[,c(1, 10, 11, 12, 2, 3, 5, 7, 4, 6, 8, 9)]
+head(df2)
 ```
+
