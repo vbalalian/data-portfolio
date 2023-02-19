@@ -21,7 +21,7 @@ The data itself can be found [here](https://divvy-tripdata.s3.amazonaws.com/inde
 
 
 #### Environment Setup
-```{r environment setup, warning=TRUE}
+```{r environment setup, message=FALSE, warning=FALSE}
 library(tidyverse)
 library(skimr)
 ```
@@ -46,6 +46,26 @@ head(df)
 
 ### Data Processing
 The dataset is very long (over 5 million rows), but not too wide, especially considering this analysis will largely be focused on only a few variables out of the original 14. Since the scope of this analysis is relatively simple, processing, analysis, and visualization of the data will be done in R Studio, which is uniquely suited to the current business task.
+<br>
+
+#### Exploratory Analysis
+Let's check out the two primary categorical values: rideable_type, and member_casual.
+```{r}
+rides_and_riders_count <- count(df, rideable_type, member_casual) %>% 
+  arrange(desc(n))
+rides_count <- count(df, rideable_type) %>% 
+  arrange(desc(n))
+riders_count <- count(df, member_casual) %>% 
+  arrange(desc(n))
+rides_and_riders_count
+rides_count
+riders_count
+```
+So far, the data has no noticeable errors, and is easy to work with
+
+#### Transforming Data
+
+Since there's not much cleaning needed to work with this dataset, let's continue transforming the original dataframe into different forms that will be useful for later analysis and visualization.   
 
 ```{r}
 df2 <- df %>% 
