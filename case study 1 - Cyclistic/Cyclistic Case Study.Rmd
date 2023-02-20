@@ -81,9 +81,7 @@ According to usgs.gov, distance between latitudes is fairly constant, but distan
 ggplot(data=df, mapping=aes(x=start_lat)) +
   geom_histogram()
 ```
-Since the distribution of latitudes is so visibly narrow, we can assume that our distance conversions will be accurate enough for the purposes of this analysis. Therefore, let's create a new variable, ride_distance, in miles. 
-<br><br>
-The following chunk creates a new dataframe, df2, which calculates values for ride_time and ride_distance based on the available location data; then removes some clutter among columns.
+Since the distribution of latitudes is so visibly narrow, we can assume that our distance conversions will be accurate enough for the purposes of this analysis. Therefore, let's create a new variable, ride_distance, in miles. The following chunk creates a new dataframe, df2, which calculates values for ride_time and ride_distance based on the available location data; then removes some clutter among columns.
 
 ```{r initial transformation}
 df2 <- df %>% 
