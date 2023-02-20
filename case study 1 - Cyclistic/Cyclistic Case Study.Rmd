@@ -68,7 +68,7 @@ ggplot(data=df, mapping=aes(x=fct_infreq(rideable_type), fill=member_casual)) +
 
 So far, the data has no noticeable errors, and is easy to work with. And already, trends are emerging. 
 <br><br>
-One thing immediately stands out: while annual members are only somewhat more likely to ride classic bikes over electric bikes, a noticeable majority of casual riders use *electric bikes* over classic bikes. Also, 100% of the 178251 docked bike rides were made by casual riders.
+One thing immediately stands out: while annual members are only *somewhat* more likely to ride classic bikes over electric bikes, a noticeable majority of casual riders use *electric bikes* over classic bikes. Also, 100% of the 178251 docked bike rides were made by casual riders.
 
 #### Transforming Data
 
