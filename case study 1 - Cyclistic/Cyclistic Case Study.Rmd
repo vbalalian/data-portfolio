@@ -47,11 +47,10 @@ head(df)
 
 ### Data Processing
 The dataset is very long (over 5 million rows), but not too wide. Since the scope of this analysis is relatively simple, processing, analysis, and visualization of the data will be done in **R Studio**, which is uniquely suited to the current business task.
-<br>
 
 #### Exploratory Analysis
 Let's take a look at the distributions of the two primary categorical values: **rideable_type**, and **member_casual**. 
-```{r rideables and rider counts}
+```{r}
 riders_and_rideables_count <- count(df, rideable_type, member_casual) %>%
   arrange(desc(n))
 rideables_count <- count(df, rideable_type) %>% 
@@ -81,20 +80,44 @@ According to usgs.gov, distance between latitudes is fairly constant, but distan
 ggplot(data=df, mapping=aes(x=start_lat)) +
   geom_histogram()
 ```
-Since the distribution of latitudes is so visibly narrow, we can assume that our distance conversions will be accurate enough for the purposes of this analysis. Therefore, let's create a new variable, ride_distance, in miles. The following chunk creates a new dataframe, df2, which calculates values for ride_time and ride_distance based on the available location data; then removes some clutter among columns.
+Since the distribution of latitudes is so visibly narrow, we can assume that our distance conversions will be accurate enough for the purposes of this analysis. Therefore, let's create a new variable, ride_distance, in miles. The following chunk creates a new dataframe, df2, which also calculates values for ride_time (in minutes) based on the available location data.
 
 ```{r initial transformation}
 df2 <- df %>% 
-  mutate(ride_time=seconds_to_period(ended_at-started_at),
+  mutate(ride_time=as.numeric(abs(ended_at-started_at))/60,
          lat_diff=round(abs(start_lat-end_lat)*69, digits=6), 
          lng_diff=round(abs(start_lng-end_lng)*52, digits=6),
          ride_distance=round(abs(lat_diff+lng_diff), digits=6),
          day_of_week=wday(df$started_at, label=TRUE)
-         ) %>% 
-    select(-file_name, -ride_id, -end_lat, -end_lng, -lat_diff, 
+         ) %>%
+  select(-file_name, -ride_id, -end_lat, -end_lng, -lat_diff, 
            -lng_diff)
 # reorder for a more favorable view
 df2 <- df2[,c(1, 10, 11, 12, 13, 2, 3, 5, 7, 4, 6, 8, 9)]
 head(df2)
+```
+Let's check for outliers among ride_time and ride_distance.
+```{r}
+df2 %>% 
+  select(ride_time, ride_distance) %>% 
+  skim()
+```
+It looks like both variables have some outliers which should be removed for the purposes of this analysis. 
+```{r}
+probabilities <- c(0.01, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999)
+print("ride_time percentiles:")
+round(quantile(df2$ride_time, probs=probabilities))
+print("ride_distance percentiles:")
+round(quantile(df2$ride_distance, probs=probabilities, na.rm=TRUE)) 
+```
+While the outliers in ride_distance seem restricted to only a few values, the outliers in ride_time are a bit harder to pinpoint. Looking at the percentiles listed above, it's clear ride_time values start to spike above the 99th percentile. Since the purpose of this analysis is to help target the largest group of potential member converts, let's ignore values above the 95th percentile.
+
+```{r message=FALSE}
+df2 %>% 
+  filter(ride_time < 45, ride_distance < 7) %>%
+  sample_n(1000) %>% 
+  ggplot(aes(x=ride_time, y=ride_distance)) +
+  geom_point(aes(color=member_casual)) +
+  geom_smooth()
 ```
 
