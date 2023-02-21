@@ -138,3 +138,25 @@ ggplot(df2, aes(x=started_at)) +
   labs(x="month")
 ```
 Among all riders, usage peaks during summer and craters in winter. As a bike rental company, this may seem obvious, but it helps to have proof that usage correlates directly with favorable weather. As such, the marketing department can safely concentrate their resources on spring and summer campaigns.
+<br><br>
+Now let's check out our top (starting) stations overall:
+```{r}
+top_stations_overall <- df2 %>%
+  count(start_station_name, sort=T, name="rides") %>%
+  drop_na() %>% 
+  head(20)
+top_stations_overall
+top_stations_overall_count <- df2 %>% 
+  filter(start_station_name %in% top_stations_overall$start_station_name) %>% 
+  count(start_station_name, member_casual, sort=T, name="rides")
+```
+```{r}
+top_stations_overall_count %>% 
+  ggplot(aes(x=start_station_name, y=rides, fill=member_casual)) +
+  geom_col() +
+  theme(axis.text.x=element_text(angle=45, hjust=1)) +
+  labs(x="starting station")
+```
+Shockingly, the "Streeter Dr & Grand Ave" station, which is the top starting station among all riders, is disproportionately favored by casual riders. Other popular stations also skew strongly in favor of casual riders, including "DuSable Lake Shore Dr & Monroe St," "Millenium Park," "Michigan Ave & Oak St," and "DuSable Lake Shore Dr & North Blvd." 
+<br><br>
+These stations, and others with higher ratios of casual riders, present an opportunity to efficiently target those casual riders we're seeking to convert. 
