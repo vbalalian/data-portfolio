@@ -51,15 +51,8 @@ The dataset is very long (over 5 million rows), but not too wide. Since the scop
 #### Exploratory Analysis
 Let's take a look at the distributions of the two primary categorical values: **rideable_type**, and **member_casual**. 
 ```{r}
-riders_and_rideables_count <- count(df, rideable_type, member_casual) %>%
+count(df, rideable_type, member_casual) %>%
   arrange(desc(n))
-rideables_count <- count(df, rideable_type) %>% 
-  arrange(desc(n))
-riders_count <- count(df, member_casual) %>% 
-  arrange(desc(n))
-riders_count
-rideables_count
-riders_and_rideables_count
 ggplot(data=df, mapping=aes(x=fct_infreq(rideable_type), fill=member_casual)) + 
   geom_bar(position="dodge") +
   labs(x="rideable_type")
