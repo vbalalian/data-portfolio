@@ -136,4 +136,4 @@ Let's see how the rides break down by day_of_week.
 ggplot(df2, aes(x=day_of_week, fill=member_casual)) +
   geom_bar(position="dodge")
 ```
-Wow! Right away, it's clear annual members are far more likely to ride during weekdays, while casual riders ride more often on weekends. This suggests casual riders tend to use Cyclistic products recreationally, while annual members are more likely to use them for work transportation.
+Right away, it's clear annual members are far more likely to ride during weekdays, while casual riders ride more often on weekends. This suggests casual riders tend to use Cyclistic products recreationally, while annual members are more likely to use them for work transportation.
