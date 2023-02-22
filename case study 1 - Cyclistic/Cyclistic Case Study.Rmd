@@ -113,13 +113,26 @@ df2 %>%
 ```
 Members and casual riders appear to ride for similar times and distances. Let's see if that holds true.
 ```{r}
-df2 %>% 
+time_and_distance_averages <- df2 %>% 
   filter(ride_time < 106, ride_distance < 7) %>%
   group_by(member_casual) %>% 
   summarize(mean_rt=mean(ride_time), med_rt=median(ride_time), 
-            mean_rd=mean(ride_distance), med_rd=median(ride_distance)) %>% 
+            mean_rd=mean(ride_distance), med_rd=median(ride_distance))
+time_and_distance_averages %>% 
   ggplot(aes(x=member_casual, y=mean_rt, fill=member_casual)) +
   labs(y="average ride time") +
+  geom_col()
+time_and_distance_averages %>% 
+  ggplot(aes(x=member_casual, y=med_rt, fill=member_casual)) +
+  labs(y="median ride time") +
+  geom_col()
+time_and_distance_averages %>% 
+  ggplot(aes(x=member_casual, y=mean_rd, fill=member_casual)) +
+  labs(y="average ride distance") +
+  geom_col()
+time_and_distance_averages %>% 
+  ggplot(aes(x=member_casual, y=med_rd, fill=member_casual)) +
+  labs(y="median ride distance") +
   geom_col()
 ```
 Surprisingly, the average casual rider appears to ride for significantly more time than their member counterparts (with little difference between average ride distances).
@@ -129,7 +142,7 @@ Let's see how the rides break down by day_of_week.
 ggplot(df2, aes(x=day_of_week, fill=member_casual)) +
   geom_bar(position="dodge")
 ```
-Right away, it's clear annual members are far more likely to ride during weekdays, while casual riders ride more often on weekends. This suggests casual riders tend to use Cyclistic products recreationally, while annual members are more likely to use them for work transportation.
+Right away, it's clear annual members are far more likely to ride during weekdays, while casual riders ride more often on weekends. This suggests casual riders tend to use Cyclistic products recreationally, while annual members are more likely to use them for work or school transportation.
 <br><br>
 Now, let's break down rides by month:
 ```{r}
