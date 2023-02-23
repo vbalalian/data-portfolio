@@ -116,23 +116,14 @@ Members and casual riders appear to ride for similar times and distances. Let's 
 time_and_distance_averages <- df2 %>% 
   filter(ride_time < 106, ride_distance < 7) %>%
   group_by(member_casual) %>% 
-  summarize(mean_rt=mean(ride_time), med_rt=median(ride_time), 
-            mean_rd=mean(ride_distance), med_rd=median(ride_distance))
+  summarize(mean_rt=mean(ride_time), mean_rd=mean(ride_distance),)
 time_and_distance_averages %>% 
   ggplot(aes(x=member_casual, y=mean_rt, fill=member_casual)) +
   labs(y="average ride time") +
   geom_col()
 time_and_distance_averages %>% 
-  ggplot(aes(x=member_casual, y=med_rt, fill=member_casual)) +
-  labs(y="median ride time") +
-  geom_col()
-time_and_distance_averages %>% 
   ggplot(aes(x=member_casual, y=mean_rd, fill=member_casual)) +
   labs(y="average ride distance") +
-  geom_col()
-time_and_distance_averages %>% 
-  ggplot(aes(x=member_casual, y=med_rd, fill=member_casual)) +
-  labs(y="median ride distance") +
   geom_col()
 ```
 Surprisingly, the average casual rider appears to ride for significantly more time than their member counterparts (with little difference between average ride distances).
@@ -144,10 +135,20 @@ ggplot(df2, aes(x=day_of_week, fill=member_casual)) +
 ```
 Right away, it's clear annual members are far more likely to ride during weekdays, while casual riders ride more often on weekends. This suggests casual riders tend to use Cyclistic products recreationally, while annual members are more likely to use them for work or school transportation.
 <br><br>
+Let's see how rides break down by time of day.
+```{r}
+df2 %>% 
+  mutate(started_at=(hour(started_at) + minute(started_at)/60)) %>% 
+  ggplot(aes(x=started_at, color=member_casual)) +
+  geom_freqpoly(bins=24, linewidth=2) +
+  scale_x_continuous(breaks=seq(from=0, to=24, by=2))
+```
+Usage by both members and casual riders tends to ramp up throughout the day, with both dropping off significantly after peaking around 6 pm. Annual members see significant usage spikes corresponding with normal commuting hours, while casual riders' usage is conspicuously low during morning commute hours, and doesn't spike quite as hard as member usage does in the evening.
+<br><br>
 Now, let's break down rides by month:
 ```{r}
 ggplot(df2, aes(x=started_at)) +
-  geom_histogram(bins=12) +
+  geom_freqpoly(bins=24) +
   labs(x="month")
 ```
 Among all riders, usage peaks during summer and craters in winter. As a bike rental company, this may seem obvious, but it helps to have proof that usage correlates directly with favorable weather. As such, the marketing department can safely concentrate their resources on spring and summer campaigns.
@@ -172,4 +173,4 @@ top_stations_overall_count %>%
 ```
 Shockingly, the "Streeter Dr & Grand Ave" station, which is the top starting station among all riders, is disproportionately favored by casual riders. Other popular stations also skew strongly in favor of casual riders, including "DuSable Lake Shore Dr & Monroe St," "Millenium Park," "Michigan Ave & Oak St," and "DuSable Lake Shore Dr & North Blvd." 
 <br><br>
-These stations, and others with higher ratios of casual riders, present an opportunity to efficiently target those casual riders we're seeking to convert. 
+These stations, and others with higher ratios of casual riders, present an opportunity to efficiently target those casual riders we're seeking to convert.
