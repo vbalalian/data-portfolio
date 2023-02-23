@@ -48,22 +48,6 @@ head(df)
 ### Data Processing
 The dataset is very long (over 5 million rows), but not too wide. Since the scope of this analysis is relatively simple, processing, analysis, and visualization of the data will be done in **R Studio**, which is uniquely suited to the current business task.
 
-#### Exploratory Analysis
-Let's take a look at the distributions of the two primary categorical values: **rideable_type**, and **member_casual**. 
-```{r}
-count(df, rideable_type, member_casual) %>%
-  arrange(desc(n))
-ggplot(data=df, mapping=aes(x=fct_infreq(rideable_type), fill=member_casual)) + 
-  geom_bar(position="dodge") +
-  labs(x="rideable_type")
-```
-
-So far, the data has no noticeable errors, and is easy to work with. And already, trends are emerging. 
-<br><br>
-One thing immediately stands out: while annual members are only *somewhat* more likely to ride classic bikes over electric bikes, a noticeable majority of casual riders use *electric bikes* over classic bikes. Also, 100% of the 178251 docked bike rides were made by casual riders.
-
-#### Transforming Data
-
 Since there's not much cleaning needed to work with this dataset, let's continue transforming the original dataframe into different forms that will be useful for later analysis and visualization.
 <br><br>
 First, let's see if we can get an accurate conversion of distance. 
@@ -73,8 +57,11 @@ According to usgs.gov, distance between latitudes is fairly constant, but distan
 ggplot(data=df, mapping=aes(x=start_lat)) +
   geom_histogram()
 ```
-Since the distribution of latitudes is so visibly narrow, we can assume that our distance conversions will be accurate enough for the purposes of this analysis. Therefore, let's create a new variable, ride_distance, in miles. The following chunk creates a new dataframe, df2, which also calculates values for ride_time (in minutes) based on the available location data.
+Since the distribution of latitudes is so visibly narrow, we can assume that our distance conversions will be accurate enough for the purposes of this analysis. Therefore, let's create a new variable, ride_distance, in miles.
 
+#### Transforming Data
+
+The following chunk creates a new dataframe, df2, which also calculates values for ride_time (in minutes) based on the available location data.
 ```{r initial transformation}
 df2 <- df %>% 
   mutate(ride_time=as.numeric(abs(ended_at-started_at))/60,
@@ -101,8 +88,20 @@ probabilities <- c(0.01, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999)
 round(quantile(df2$ride_time, probs=probabilities))
 round(quantile(df2$ride_distance, probs=probabilities, na.rm=TRUE)) 
 ```
-While the outliers in ride_distance seem restricted to only a few values, the outliers in ride_time are a bit harder to pinpoint. Looking at the percentiles listed above, it's clear ride_time values start to spike above the 99th percentile. Since the purpose of this analysis is to help target the largest group of potential member converts, let's ignore values above the 95th percentile.
+While the outliers in ride_distance seem restricted to only a few values, the outliers in ride_time are a bit harder to pinpoint. Looking at the percentiles listed above, it's clear ride_time values start to spike above the 99th percentile. Since the purpose of this analysis is to help target the largest group of potential member converts, when we explore ride times and distances, we'll ignore obvious outliers.
 
+### Exploratory Analysis
+First, let's take a look at the distributions of the two primary categorical values: **rideable_type**, and **member_casual**. 
+```{r}
+count(df, rideable_type, member_casual) %>%
+  arrange(desc(n))
+ggplot(data=df, mapping=aes(x=fct_infreq(rideable_type), fill=member_casual)) + 
+  geom_bar(position="dodge") +
+  labs(x="rideable_type")
+```
+One thing immediately stands out: while annual members are only *somewhat* more likely to ride classic bikes over electric bikes, a noticeable majority of casual riders use *electric bikes* over classic bikes. Also, 100% of the 178251 docked bike rides were made by casual riders.
+<br><br>
+Let's see how rides break down by time and distance:
 ```{r message=FALSE}
 df2 %>% 
   filter(ride_time < 45, ride_distance < 7) %>%
