@@ -23,4 +23,4 @@ do that, however, the marketing analyst team needs to better understand how annu
 casual riders would buy a membership, and how digital media could affect their marketing tactics. The director and her team are
 interested in analyzing the Cyclistic historical bike trip data to identify trends."
 <br><br>
-(from the Google Coursera Data Analytics course case-study information packet)
+(from the Google Coursera Data Analytics course)
