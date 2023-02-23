@@ -148,7 +148,7 @@ Usage by both members and casual riders tends to ramp up throughout the day, wit
 Now, let's break down rides by month:
 ```{r}
 ggplot(df2, aes(x=started_at)) +
-  geom_freqpoly(bins=24) +
+  geom_freqpoly(bins=24, linewidth=2) +
   labs(x="month")
 ```
 Among all riders, usage peaks during summer and craters in winter. As a bike rental company, this may seem obvious, but it helps to have proof that usage correlates directly with favorable weather. As such, the marketing department can safely concentrate their resources on spring and summer campaigns.
