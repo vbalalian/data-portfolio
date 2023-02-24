@@ -184,7 +184,7 @@ Based on this analysis, we've learned a few things about casual riders and how t
 
 * **Ride for longer time periods** (with little difference between ride distances). 
 
-* **Ride more often on weekends**
+* **Ride more often on weekends** (as opposed to members, who ride more during the week).
 <br><br>
 The trends above have a "leisurely" aspect to them which suggests casual riders tend to use Cyclistic products recreationally, while annual members are more likely to use them for work or school transportation.
 
@@ -201,4 +201,9 @@ This could mean several things. Casual riders may be less likely to work full-ti
 (Other popular stations that skew strongly in favor of casual riders include "DuSable Lake Shore Dr & Monroe St," "DuSable Lake Shore Dr & North Blvd," "Millenium Park," and "Michigan Ave & Oak St.”)
 
 ### Recommendations
+
+#### 1) Concentrate marketing resources on busier time periods for casual riders...
+
+...such as afternoons and **evenings**, during **weekends**, during the months of **May through September**.
+
 
