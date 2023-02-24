@@ -176,3 +176,26 @@ The "Streeter Dr & Grand Ave" station, which is the top starting station among a
 <br><br>
 These stations, and others with higher ratios of casual riders, present an opportunity to efficiently target those casual riders we're seeking to convert.
 
+### Recap
+
+Based on this analysis, we've learned a few things about casual riders and how their tendencies differ from those of current members.
+
+#### On average, Casual Riders:
+
+* **prefer electric bikes**
+
+* **ride for longer time periods**
+
+* **ride more often on weekends**
+
+#### Also:
+
+* **Usage by both members and casual riders tends to ramp up throughout the day**, and drop off significantly after **peaking around 6 pm**; but while member usage spikes during both morning and evening commuting hours, **usage by casual riders is conspicuously low in the morning**.
+
+* Among all riders, **usage peaks during summer and craters in winter**; but **the difference is more pronounced among casual riders**, with usage heavily concentrated among summer months.
+
+* **Some stations** (like the "Streeter Dr & Grand Ave" station) **are disproportionately favored by casual riders.**
+<br>
+(Other popular stations that skew strongly in favor of casual riders include "DuSable Lake Shore Dr & Monroe St," "DuSable Lake Shore Dr & North Blvd," "Millenium Park," and "Michigan Ave & Oak St.”)
+
+
