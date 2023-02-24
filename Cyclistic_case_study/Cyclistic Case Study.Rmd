@@ -18,8 +18,6 @@ Despite the fictional nature of the titular company, the data itself reflects th
 <br><br>
 The data itself can be found [here](https://divvy-tripdata.s3.amazonaws.com/index.html), where csv files are available for each month/period of data, dating back to 2013. For the purposes of this analysis, we'll be using the data from February 2022 to January 2023.
 <br>
-
-
 #### Environment Setup
 ```{r environment setup, message=FALSE, warning=FALSE}
 library(tidyverse)
@@ -132,7 +130,7 @@ Let's see how the rides break down by day_of_week.
 ggplot(df2, aes(x=day_of_week, fill=member_casual)) +
   geom_bar(position="dodge")
 ```
-Right away, it's clear annual members are far more likely to ride during weekdays, while casual riders ride more often on weekends. This suggests casual riders tend to use Cyclistic products recreationally, while annual members are more likely to use them for work or school transportation.
+Right away, it's clear annual members are far more likely to ride during weekdays, while casual riders ride more often on weekends.
 <br><br>
 Let's see how rides break down by time of day.
 ```{r}
@@ -182,15 +180,19 @@ Based on this analysis, we've learned a few things about casual riders and how t
 
 #### On average, Casual Riders:
 
-* **prefer electric bikes**
+* **Prefer electric bikes** (Annual members prefer classic bikes. Also, docked bike rides were made exclusively by casual riders.)
 
-* **ride for longer time periods**
+* **Ride for longer time periods** (with little difference between ride distances). 
 
-* **ride more often on weekends**
+* **Ride more often on weekends**
+<br><br>
+The trends above have a "leisurely" aspect to them which suggests casual riders tend to use Cyclistic products recreationally, while annual members are more likely to use them for work or school transportation.
 
 #### Also:
 
 * **Usage by both members and casual riders tends to ramp up throughout the day**, and drop off significantly after **peaking around 6 pm**; but while member usage spikes during both morning and evening commuting hours, **usage by casual riders is conspicuously low in the morning**.
+<br>
+This could mean several things. Casual riders may be less likely to work full-time jobs. Perhaps a higher share of casual riders are college students. It’s also likely that many casual riders are tourists or, as we’ve seen, “weekend warriors.”
 
 * Among all riders, **usage peaks during summer and craters in winter**; but **the difference is more pronounced among casual riders**, with usage heavily concentrated among summer months.
 
@@ -198,4 +200,5 @@ Based on this analysis, we've learned a few things about casual riders and how t
 <br>
 (Other popular stations that skew strongly in favor of casual riders include "DuSable Lake Shore Dr & Monroe St," "DuSable Lake Shore Dr & North Blvd," "Millenium Park," and "Michigan Ave & Oak St.”)
 
+### Recommendations
 
