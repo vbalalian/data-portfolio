@@ -17,7 +17,7 @@ The "Cyclistic" dataset was provided by Google as part of their Coursera Data An
 Despite the fictional nature of the titular company, the data itself reflects the operations of an actual, high-volume bike-share business, which gives us a substantial amount of comprehensive, real-world data to work with. (Any personal or private information has already been removed.)
 <br><br>
 The data itself can be found [here](https://divvy-tripdata.s3.amazonaws.com/index.html), where csv files are available for each month/period of data, dating back to 2013. For the purposes of this analysis, we'll be using the data from February 2022 to January 2023.
-<br>
+
 #### Environment Setup
 ```{r environment setup, message=FALSE, warning=FALSE}
 library(tidyverse)
@@ -213,4 +213,10 @@ In order to achieve our goal of maximizing the number of annual memberships by c
 #### 3) Highlight electric bikes, and their range/capacity
 
 We know that, unlike current members, casual riders prefer electric bikes over classic bikes. We also know casual riders ride for substantially longer times. An effective marketing campaign should highlight these two features.
+<br><br>
+Overall, there are clear differences among trends between casual riders and established members, and clear opportunities to target them using these insights.
+<br><br>
+
+
+
 
