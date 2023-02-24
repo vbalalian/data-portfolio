@@ -178,7 +178,7 @@ Based on this analysis, we've learned a few things about casual riders and how t
 
 #### On average, Casual Riders:
 
-* **Prefer electric bikes** (Annual members prefer classic bikes. Also, docked bike rides were made exclusively by casual riders.)
+* **Prefer electric bikes** (Annual members prefer classic bikes.)
 
 * **Ride for longer time periods** (with little difference between ride distances). 
 
@@ -200,6 +200,8 @@ This could mean several things. Casual riders may be less likely to work full-ti
 
 ### Recommendations
 
+In order to achieve our goal of maximizing the number of annual memberships by converting casual riders, I suggest the marketing department incorporate the following into their plans:
+
 #### 1) Concentrate marketing efforts on the more popular time periods among casual riders...
 
 ...such as afternoons and **evenings**, during **weekends**, during the months of **May through September**.
@@ -208,4 +210,7 @@ This could mean several things. Casual riders may be less likely to work full-ti
 
 ...which, having higher ratios of casual riders, present an opportunity to efficiently target them where they're most likely to be.
 
+#### 3) Highlight electric bikes, and their range/capacity
+
+We know that, unlike current members, casual riders prefer electric bikes over classic bikes. We also know casual riders ride for substantially longer times. An effective marketing campaign should highlight these two features.
 
