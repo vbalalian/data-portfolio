@@ -19,7 +19,6 @@
 6,Aelia Verina,RIC_0615,Gold,1.51,,AD,466.0,['AVG'],RIC_0615.jpg,RIC_0615.txt
 7,Aelia Verina,RIC_0631,Gold,,,AD,457.0,,RIC_0631.jpg,RIC_0631.txt
 8,Aelia Verina,RIC_0632,Gold,,,AD,457.0,,RIC_0632.jpg,RIC_0632.txt
-9,Aelia Verina,RIC_0655,Copper,,20.0,BC,-225.0,,RIC_0655.jpg,RIC_0655.txt
 3,Aelius,RIC_0428var2,Silver,3.15,,AD,136.0,"['COS', 'TR']",RIC_0428var2.jpg,RIC_0428var2.txt
 4,Aelius,,Gold,,,AD,136.0,"['COS', 'TR']",,
 6,Aelius,RIC_0430c,Silver,3.54,,AD,138.0,"['COS', 'TR']",RIC_0430c.jpg,RIC_0430c.txt
@@ -4234,7 +4233,6 @@
 61,Constans,_antioch_RIC_VIII_128_G,Copper,,,AD,348.0,['PF'],_antioch_RIC_VIII_128_G.jpg,_antioch_RIC_VIII_128_G.txt
 62,Constans,_antioch_RIC_VIII_128_D,Copper,,,AD,348.0,['PF'],_antioch_RIC_VIII_128_D.jpg,_antioch_RIC_VIII_128_D.txt
 63,Constans,_antioch_RIC_VIII_128_I,Copper,,,AD,348.0,['PF'],_antioch_RIC_VIII_128_I.jpg,_antioch_RIC_VIII_128_I.txt
-64,Constans,_antioch_RIC_viii_128,Copper,,,BC,-261.0,,_antioch_RIC_viii_128.jpg,_antioch_RIC_viii_128.txt
 65,Constans,_aquileia_RIC_VII_127_P,Copper,,,AD,333.0,,_aquileia_RIC_VII_127_P.jpg,_aquileia_RIC_VII_127_P.txt
 66,Constans,_aquileia_RIC_VII_127,Copper,,,AD,335.0,,_aquileia_RIC_VII_127.jpg,_aquileia_RIC_VII_127.txt
 67,Constans,_aquileia_RIC_VII_134,Copper,,,AD,335.0,,_aquileia_RIC_VII_134.jpg,_aquileia_RIC_VII_134.txt
@@ -4366,7 +4364,6 @@
 319,Constans,_thessalonica_RIC_VIII_116_A_var,Copper,,,AD,348.0,['PF'],_thessalonica_RIC_VIII_116_A_var.jpg,_thessalonica_RIC_VIII_116_A_var.txt
 323,Constans,_thessalonica_RIC_viii_118.1,Copper,,,AD,350.0,['PF'],_thessalonica_RIC_viii_118.1.jpg,_thessalonica_RIC_viii_118.1.txt
 324,Constans,_thessalonica_RIC_viii_120.1,Copper,,,AD,350.0,,_thessalonica_RIC_viii_120.1.jpg,_thessalonica_RIC_viii_120.1.txt
-325,Constans,_thessalonica_RIC_viii_122.1,Copper,,24.0,BC,-164.0,,_thessalonica_RIC_viii_122.1.jpg,_thessalonica_RIC_viii_122.1.txt
 326,Constans,_thessalonica_RIC_VIII_143,Gold,,,AD,350.0,,_thessalonica_RIC_VIII_143.jpg,_thessalonica_RIC_VIII_143.txt
 327,Constans,_thessalonica_Tkalek_2002-250,Silver,5.35,,AD,336.0,,_thessalonica_Tkalek_2002-250.jpg,_thessalonica_Tkalek_2002-250.txt
 328,Constans,_trier_Leu_93-141,Gold,12.83,,AD,342.0,['PF'],_trier_Leu_93-141.jpg,_trier_Leu_93-141.txt
@@ -4424,7 +4421,6 @@
 30,Constantine,_antioch_RIC_VI_164c,Copper,,,AD,312.0,"['IMP', 'PF', 'C']",_antioch_RIC_VI_164c.jpg,_antioch_RIC_VI_164c.txt
 31,Constantine,_antioch_RIC_VI_166var,Copper,,,AD,312.0,['IMP'],_antioch_RIC_VI_166var.jpg,_antioch_RIC_VI_166var.txt
 32,Constantine,_antioch_RIC_VI_167c,Copper,,,AD,312.0,"['IMP', 'PF', 'C']",_antioch_RIC_VI_167c.jpg,_antioch_RIC_VI_167c.txt
-33,Constantine,_antioch_RIC_VI_170c_H,Copper,,,BC,-201.0,"['IMP', 'PF', 'C']",_antioch_RIC_VI_170c_H.jpg,_antioch_RIC_VI_170c_H.txt
 34,Constantine,_antioch_RIC_VI_170c_DI,Copper,,,AD,313.0,"['IMP', 'PF', 'C']",_antioch_RIC_VI_170c_DI.jpg,_antioch_RIC_VI_170c_DI.txt
 35,Constantine,_antioch_RIC_vII_001,Gold,,,AD,312.0,,_antioch_RIC_vII_001.jpg,_antioch_RIC_vII_001.txt
 36,Constantine,_antioch_RIC_VII_007_B,Gold,,,AD,314.0,"['IMP', 'PF', 'C']",_antioch_RIC_VII_007_B.jpg,_antioch_RIC_VII_007_B.txt
@@ -6009,9 +6005,6 @@
 94,Constantius II,_antioch_RIC_VIII_113_DI,Copper,,,AD,348.0,['PF'],_antioch_RIC_VIII_113_DI.jpg,_antioch_RIC_VIII_113_DI.txt
 95,Constantius II,_antioch_RIC_VIII_114A_B,Copper,,,AD,347.0,['PF'],_antioch_RIC_VIII_114A_B.jpg,_antioch_RIC_VIII_114A_B.txt
 97,Constantius II,_antioch_RIC_VIII_122_B,Copper,4.8,,AD,348.0,['PF'],_antioch_RIC_VIII_122_B.jpg,_antioch_RIC_VIII_122_B.txt
-99,Constantius II,_antioch_RIC_VIII_125_A,Copper,,,BC,-261.0,['PF'],_antioch_RIC_VIII_125_A.jpg,_antioch_RIC_VIII_125_A.txt
-100,Constantius II,_antioch_RIC_viii_125,Copper,,,BC,-261.0,['PF'],_antioch_RIC_viii_125.jpg,_antioch_RIC_viii_125.txt
-101,Constantius II,_antioch_RIC_viii_125.1,Copper,,,BC,-261.0,['PF'],_antioch_RIC_viii_125.1.jpg,_antioch_RIC_viii_125.1.txt
 102,Constantius II,_antioch_RIC_VIII_127,Copper,,,AD,355.0,['PF'],_antioch_RIC_VIII_127.jpg,_antioch_RIC_VIII_127.txt
 103,Constantius II,_antioch_RIC_viii_129,Copper,,,AD,350.0,,_antioch_RIC_viii_129.jpg,_antioch_RIC_viii_129.txt
 104,Constantius II,_antioch_RIC_VIII_129_Q,Copper,,,AD,50.0,['PF'],_antioch_RIC_VIII_129_Q.jpg,_antioch_RIC_VIII_129_Q.txt
@@ -6352,7 +6345,6 @@
 732,Constantius II,_siscia_RIC_VIII_304_A,Copper,,,AD,350.0,['PF'],_siscia_RIC_VIII_304_A.jpg,_siscia_RIC_VIII_304_A.txt
 734,Constantius II,_siscia_RIC_VIII_304_E,Copper,,,AD,350.0,['PF'],_siscia_RIC_VIII_304_E.jpg,_siscia_RIC_VIII_304_E.txt
 735,Constantius II,_siscia_RIC_viii_305,Copper,,23.0,AD,351.0,['PF'],_siscia_RIC_viii_305.jpg,_siscia_RIC_viii_305.txt
-742,Constantius II,_siscia_RIC_viii_332,Copper,,23.0,BC,-120.0,,_siscia_RIC_viii_332.jpg,_siscia_RIC_viii_332.txt
 743,Constantius II,_siscia_RIC_VIII_334_A,Copper,,,AD,337.0,['PF'],_siscia_RIC_VIII_334_A.jpg,_siscia_RIC_VIII_334_A.txt
 744,Constantius II,_siscia_RIC_VIII_334_B,Copper,,,AD,337.0,['PF'],_siscia_RIC_VIII_334_B.jpg,_siscia_RIC_VIII_334_B.txt
 746,Constantius II,_siscia_RIC_viii_346,Copper,,,AD,361.0,,_siscia_RIC_viii_346.jpg,_siscia_RIC_viii_346.txt
@@ -6461,7 +6453,6 @@
 137,Constantius Gallus,_siscia_RIC_VIII_356,Copper,,,AD,351.0,,_siscia_RIC_VIII_356.jpg,_siscia_RIC_VIII_356.txt
 138,Constantius Gallus,_thessalonica_RIC_106,Copper,,,AD,354.0,,_thessalonica_RIC_106.jpg,_thessalonica_RIC_106.txt
 140,Constantius Gallus,_thessalonica_RIC_164,Silver,,,AD,350.0,,_thessalonica_RIC_164.jpg,_thessalonica_RIC_164.txt
-141,Constantius Gallus,_thessalonica_RIC_167,Copper,,,BC,-166.0,,_thessalonica_RIC_167.jpg,_thessalonica_RIC_167.txt
 142,Constantius Gallus,_thessalonica_RIC_171_var_E,Copper,,,AD,351.0,,_thessalonica_RIC_171_var_E.jpg,_thessalonica_RIC_171_var_E.txt
 3,Cornelia Supera,_aegeae_AE25_SNGLev_1792,Copper,,,AD,253.0,,_aegeae_AE25_SNGLev_1792.jpg,_aegeae_AE25_SNGLev_1792.txt
 4,Cornelia Supera,_julia_AulockPhryg_437,Copper,,,AD,253.0,,_julia_AulockPhryg_437.jpg,_julia_AulockPhryg_437.txt
@@ -7816,7 +7807,6 @@
 897,Elagabalus,_side_SNGPfalz_694_var,Copper,,,AD,198.0,,_side_SNGPfalz_694_var.jpg,_side_SNGPfalz_694_var.txt
 905,Elagabalus,_sidon_AE29_BMC_263,Copper,,29.0,AD,222.0,,_sidon_AE29_BMC_263.jpg,_sidon_AE29_BMC_263.txt
 915,Elagabalus,_stratonikeia_G&amp;N_38-519,Copper,20.21,,AD,218.0,,_stratonikeia_G&amp;N_38-519.jpg,_stratonikeia_G&amp;N_38-519.txt
-918,Elagabalus,_tarsus_SNGCop_374,Copper,6.7,,BC,-222.0,,_tarsus_SNGCop_374.jpg,_tarsus_SNGCop_374.txt
 923,Elagabalus,_tarsos_SNGvA_6023,Copper,,,AD,222.0,,_tarsos_SNGvA_6023.jpg,_tarsos_SNGvA_6023.txt
 926,Elagabalus,_thessalonica_Touratsoglou_046,Copper,11.55,,AD,218.0,,_thessalonica_Touratsoglou_046.jpg,_thessalonica_Touratsoglou_046.txt
 927,Elagabalus,_thessalonica_Touratsoglou_067,Copper,7.36,,AD,218.0,,_thessalonica_Touratsoglou_067.jpg,_thessalonica_Touratsoglou_067.txt
@@ -8129,7 +8119,6 @@
 2,Flavius Victor,_aquileia_RIC_0054b,Silver,,,AD,388.0,['PF'],_aquileia_RIC_0054b.jpg,_aquileia_RIC_0054b.txt
 3,Flavius Victor,_aquileia_RIC_055b_no_officina,Copper,,,AD,387.0,,_aquileia_RIC_055b_no_officina.jpg,_aquileia_RIC_055b_no_officina.txt
 4,Flavius Victor,_aquileia_RIC_055b,Copper,,,AD,388.0,,_aquileia_RIC_055b.jpg,_aquileia_RIC_055b.txt
-5,Flavius Victor,_aquileia_RIC_055b1,Copper,,13.0,BC,-100.0,,_aquileia_RIC_055b1.jpg,_aquileia_RIC_055b1.txt
 6,Flavius Victor,_aquileia_RIC_055b_S,Copper,,,AD,387.0,['PF'],_aquileia_RIC_055b_S.jpg,_aquileia_RIC_055b_S.txt
 7,Flavius Victor,_arles_RIC_0029b,Copper,,,AD,388.0,['PF'],_arles_RIC_0029b.jpg,_arles_RIC_0029b.txt
 8,Flavius Victor,_arles_RIC_0029b_S,Copper,,,AD,388.0,['PF'],_arles_RIC_0029b_S.jpg,_arles_RIC_0029b_S.txt
@@ -10948,7 +10937,6 @@
 49,Jovian,_nicomedia_RIC_128,Copper,,,AD,364.0,['PF'],_nicomedia_RIC_128.jpg,_nicomedia_RIC_128.txt
 50,Jovian,_nicomedia_RIC_128_G,Copper,,,AD,364.0,['PF'],_nicomedia_RIC_128_G.jpg,_nicomedia_RIC_128_G.txt
 55,Jovian,_sirmium_RIC_118.1,Copper,,,AD,364.0,['PF'],_sirmium_RIC_118.jpg,_sirmium_RIC_118.txt
-56,Jovian,"_sirmium_RIC_118,B",Copper,,18.0,BC,-162.0,['PF'],"_sirmium_RIC_118,B.jpg","_sirmium_RIC_118,B.txt"
 57,Jovian,_sirmium_RIC_119.2,Copper,,,AD,364.0,['PF'],_sirmium_RIC_119.2.jpg,_sirmium_RIC_119.2.txt
 58,Jovian,_sirmium_RIC_119.1,Copper,,,AD,364.0,['PF'],_sirmium_RIC_119.1.jpg,_sirmium_RIC_119.1.txt
 62,Jovian,_siscia_RIC_426.1,Copper,,20.0,AD,364.0,['PF'],_siscia_RIC_426.1.jpg,_siscia_RIC_426.1.txt
@@ -11477,7 +11465,6 @@
 51,Julia Mamaea,milne_3154,Silver,12.42,23.0,AD,222.0,,milne_3154.jpg,milne_3154.txt
 52,Julia Mamaea,milne_3170,Silver,,,AD,234.0,,milne_3170.jpg,milne_3170.txt
 53,Julia Mamaea,_amblada_Aulock_Pis_144,Copper,11.49,,AD,222.0,,_amblada_Aulock_Pis_144.jpg,_amblada_Aulock_Pis_144.txt
-54,Julia Mamaea,_anazarbus_Ziegler_510,Copper,8.6,23.0,BC,-230.0,,_anazarbus_Ziegler_510.jpg,_anazarbus_Ziegler_510.txt
 55,Julia Mamaea,_anazarbus_Ziegler_515,Copper,12.21,,AD,230.0,,_anazarbus_Ziegler_515.jpg,_anazarbus_Ziegler_515.txt
 56,Julia Mamaea,_anazarbus_Ziegler_515var,Copper,9.2,,AD,230.0,,_anazarbus_Ziegler_515var.jpg,_anazarbus_Ziegler_515var.txt
 58,Julia Mamaea,_anazarbus_Ziegler_559,Copper,,,AD,231.0,,_anazarbus_Ziegler_559.jpg,_anazarbus_Ziegler_559.txt
@@ -11679,8 +11666,6 @@
 125,Julian II,_heraclea_RIC_104.1,Copper,,28.0,AD,363.0,['PF'],_heraclea_RIC_104.1.jpg,_heraclea_RIC_104.1.txt
 126,Julian II,_heraclea_RIC_105_B,Copper,3.33,20.0,AD,361.0,['PF'],_heraclea_RIC_105_B.jpg,_heraclea_RIC_105_B.txt
 127,Julian II,_heraclea_RIC_105var_A,Copper,,20.0,AD,361.0,['PF'],_heraclea_RIC_105var_A.jpg,_heraclea_105var_A.txt
-128,Julian II,_heraclea_RIC_106.7,Copper,,20.0,BC,-190.0,['PF'],_heraclea_RIC_106.7.jpg,_heraclea_RIC_106.7.txt
-129,Julian II,_heraclea_RIC_106.3,Copper,,20.0,BC,-190.0,['PF'],_heraclea_RIC_106.3.jpg,_heraclea_RIC_106.3.txt
 130,Julian II,_lyons_Gemini_XI-568,Silver,1.97,,AD,360.0,,_lyons_Gemini_XI-568.jpg,_lyons_Gemini_XI-568.txt
 134,Julian II,_lyons_RIC_212,Silver,,,AD,360.0,"['AVG', 'PP']",_lyons_RIC_212.jpg,_lyons_RIC_212.txt
 135,Julian II,_lyons_RIC_212_var,Silver,,,AD,360.0,,_lyons_RIC_212_var.jpg,_lyons_RIC_212_var.txt
@@ -11703,13 +11688,11 @@
 170,Julian II,_rome_RIC_329_T,Copper,,,AD,361.0,['PP'],_rome_RIC_329_T.jpg,_rome_RIC_329_T.txt
 172,Julian II,_sirmium_RIC_074,Copper,,,AD,355.0,,_sirmium_RIC_074.jpg,_sirmium_RIC_074.txt
 176,Julian II,_sirmium_RIC_081_A,Copper,,,AD,355.0,,_sirmium_RIC_081_A.jpg,_sirmium_RIC_081_A.txt
-188,Julian II,_sirmium_RIC_108,Copper,,20.0,BC,-161.0,,_sirmium_RIC_108.jpg,_sirmium_RIC_108.txt
 189,Julian II,_sirmium_RIC_108_fancy,Copper,,,AD,363.0,['PF'],_sirmium_RIC_108_fancy.jpg,_sirmium_RIC_108_fancy.txt
 190,Julian II,_siscia_RIC_363,Copper,,,AD,355.0,,_siscia_RIC_363.jpg,_siscia_RIC_363.txt
 191,Julian II,_siscia_RIC_370,Copper,,,AD,360.0,,_siscia_RIC_370.jpg,_siscia_RIC_370.txt
 192,Julian II,_siscia_RIC_371,Copper,,,AD,360.0,,_siscia_RIC_371.jpg,_siscia_RIC_371.txt
 198,Julian II,_siscia_RIC_402,Copper,,,AD,361.0,,_siscia_RIC_402.jpg,_siscia_RIC_402.txt
-200,Julian II,_siscia_RIC_411,Copper,,29.0,BC,-125.0,['PF'],_siscia_RIC_411.jpg,_siscia_RIC_411.txt
 201,Julian II,_siscia_RIC_415,Copper,,,AD,361.0,['PF'],_siscia_RIC_415.jpg,_siscia_RIC_415.txt
 203,Julian II,_siscia_RIC_419_A,Copper,,29.0,AD,361.0,['PF'],_siscia_RIC_419_A.jpg,_siscia_RIC_419_A.txt
 204,Julian II,_siscia_RIC_421,Copper,,20.0,AD,361.0,['PF'],_siscia_RIC_421.jpg,_siscia_RIC_421.txt
@@ -11742,7 +11725,6 @@
 10,Julius Nepos,RIC_3766,Gold,1.5,,AD,474.0,"['PF', 'C']",RIC_3766.jpg,RIC_3766.txt
 1,Leo I,Bendall_Weights_16,Copper,4.23,,AD,457.0,,Bendall_Weights_16.jpg,Bendall_Weights_16.txt
 2,Leo I,Bendall_Weights_16_var,Copper,2.18,,AD,457.0,,Bendall_Weights_16_var.jpg,Bendall_Weights_16_var.txt
-4,Leo I,LRBC_2275,Copper,,,BC,-227.0,,LRBC_2275.jpg,LRBC_2275.txt
 6,Leo I,RIC_0605cf,Gold,,,AD,472.0,,RIC_0605cf.jpg,RIC_0605cf.txt
 9,Leo I,RIC_0611v,Gold,,15.0,AD,473.0,,RIC_0611v.jpg,RIC_0611v.txt
 24,Leo I,RIC_0664,Copper,4.99,19.0,AD,474.0,,RIC_0664.jpg,RIC_0664.txt
@@ -12656,7 +12638,6 @@
 68,Magnentius,_lyons_RIC_121,Copper,,,AD,350.0,"['AVG', 'PF']",_lyons_RIC_121.jpg,_lyons_RIC_121.txt
 70,Magnentius,_lyons_RIC_123,Copper,,21.0,AD,350.0,['AVG'],_lyons_RIC_123.jpg,_lyons_RIC_123.txt
 71,Magnentius,_lyons_RIC_126,Copper,,21.0,AD,351.0,,_lyons_RIC_126.jpg,_lyons_RIC_126.txt
-72,Magnentius,_lyons_RIC_130,Copper,,22.0,BC,-223.0,['AVG'],_lyons_RIC_130.jpg,_lyons_RIC_130.txt
 77,Magnentius,_lyons_RIC_151,Copper,,22.0,AD,350.0,"['AVG', 'PF']",_lyons_RIC_151.jpg,_lyons_RIC_151.txt
 78,Magnentius,_lyons_RIC_153,Copper,,26.49,AD,350.0,"['AVG', 'PF']",_lyons_RIC_153.jpg,_lyons_RIC_153.txt
 79,Magnentius,_lyons_RIC_154,Copper,,25.0,AD,353.0,['AVG'],_lyons_RIC_154.jpg,_lyons_RIC_154.txt
@@ -17221,8 +17202,6 @@
 133,Theodosius I,_siscia_RIC_029d,Copper,,,AD,383.0,['PF'],_siscia_RIC_029d.jpg,_siscia_RIC_029d.txt
 134,Theodosius I,_siscia_RIC_030b,Copper,,,AD,383.0,['PF'],_siscia_RIC_030b.jpg,_siscia_RIC_030b.txt
 136,Theodosius I,_siscia_RIC_038b.1,Copper,,,AD,384.0,['PF'],_siscia_RIC_038b.1.jpg,_siscia_RIC_038b.1.txt
-137,Theodosius I,_siscia_RIC_039b.1,Copper,,,BC,-157.0,['PF'],_siscia_RIC_039b.1.jpg,_siscia_RIC_039b.1.txt
-138,Theodosius I,_siscia_RIC_039b_B,Copper,,,BC,-157.0,['PF'],_siscia_RIC_039b_B.jpg,_siscia_RIC_039b_B.txt
 145,Theodosius I,_thessalonica_RIC_062b,Copper,,,AD,388.0,['PF'],_thessalonica_RIC_062b.jpg,_thessalonica_RIC_062b.txt
 146,Theodosius I,_thessalonica_RIC_062b_D,Copper,,,AD,388.0,['PF'],_thessalonica_RIC_062b_D.jpg,_thessalonica_RIC_062b_D.txt
 149,Theodosius I,_trier_RIC_055a_083a,Silver,,16.15,AD,383.0,['PF'],_trier_RIC_055a_083a.jpg,_trier_RIC_055a_083a.txt
@@ -17974,7 +17953,6 @@
 181,Trajan Decius,_ephesos_SNGCop_448var,Copper,,,AD,251.0,,_ephesos_SNGCop_448var.jpg,_ephesos_SNGCop_448var.txt
 183,Trajan Decius,_ephesos_SNGvA_1919_2,Copper,,,AD,249.0,,_ephesos_SNGvA_1919_2.jpg,_ephesos_SNGvA_1919_2.txt
 196,Trajan Decius,_maeonia_BMC_53,Copper,20.41,,AD,251.0,,_maeonia_BMC_53.jpg,_maeonia_BMC_53.txt
-197,Trajan Decius,_maeonia_Paris_612A,Copper,26.36,,BC,-186.0,,_maeonia_Paris_612A.jpg,_maeonia_Paris_612A.txt
 198,Trajan Decius,_magnesiaLydia_RPC_573,Copper,15.0,,AD,249.0,,_magnesiaLydia_RPC_573.jpg,_magnesiaLydia_RPC_573.txt
 199,Trajan Decius,_magnesiaAdSipy_SNG_Fitz_4865,Copper,,,AD,249.0,,_magnesiaAdSipy_SNG_Fitz_4865.jpg,_magnesiaAdSipy_SNG_Fitz_4865.txt
 201,Trajan Decius,_metropolis_SNGvA_8424,Copper,,,AD,251.0,,_metropolis_SNGvA_8424.jpg,_metropolis_SNGvA_8424.txt
@@ -18265,7 +18243,6 @@
 131,Valens,_nicomedia_RIC_002d1,Gold,,,AD,367.0,['PF'],_nicomedia_RIC_002d1.jpg,_nicomedia_RIC_002d1.txt
 134,Valens,_nicomedia_RIC_07b_A,Copper,,,AD,364.0,['PF'],_nicomedia_RIC_07b_A.jpg,_nicomedia_RIC_07b_A.txt
 135,Valens,"_nicomedia_RIC_007b,B",Copper,,27.0,AD,367.0,['PF'],"_nicomedia_RIC_007b,B.jpg","_nicomedia_RIC_007b,B.txt"
-136,Valens,_nicomedia_RIC_007b,Copper,,25.0,BC,-232.0,['PF'],_nicomedia_RIC_007b.jpg,_nicomedia_RIC_007b.txt
 137,Valens,_nicomedia_RIC_07b_D,Copper,,28.0,AD,364.0,['PF'],_nicomedia_RIC_07b_D.jpg,_nicomedia_RIC_07b_D.txt
 138,Valens,_nicomedia_RIC_009b,Copper,,,AD,367.0,['PF'],_nicomedia_RIC_009b.jpg,_nicomedia_RIC_009b.txt
 140,Valens,_nicomedia_RIC_012c,Copper,,,AD,367.0,['PF'],_nicomedia_RIC_012c.jpg,_nicomedia_RIC_012c.txt
@@ -19034,7 +19011,6 @@
 6,Vetranio,_siscia_RIC_267,Silver,,26.0,AD,350.0,['PF'],_siscia_RIC_267.jpg,_siscia_RIC_267.txt
 7,Vetranio,_siscia_RIC_269,Silver,,,AD,350.0,['PF'],_siscia_RIC_269.jpg,_siscia_RIC_269.txt
 8,Vetranio,_siscia_RIC_274,Copper,,,AD,350.0,['PF'],_siscia_RIC_274.jpg,_siscia_RIC_274.txt
-9,Vetranio,_siscia_RIC_277,Copper,,,BC,-116.0,['PF'],_siscia_RIC_277.jpg,_siscia_RIC_277.txt
 10,Vetranio,_siscia_RIC_279_A,Copper,,,AD,350.0,['PF'],_siscia_RIC_279_A.jpg,_siscia_RIC_279_A.txt
 11,Vetranio,_siscia_RIC_279_E,Copper,,,AD,350.0,['PF'],_siscia_RIC_279_E.jpg,_siscia_RIC_279_E.txt
 15,Vetranio,_siscia_RIC_281,Copper,,,AD,350.0,['PF'],_siscia_RIC_281_D.jpg,_siscia_RIC_281_D.txt
@@ -19047,10 +19023,6 @@
 26,Vetranio,_siscia_RIC_290_G,Copper,,,AD,350.0,['PF'],_siscia_RIC_290_G.jpg,_siscia_RIC_290_G.txt
 27,Vetranio,_siscia_RIC_292_G,Copper,,,AD,350.0,['PF'],_siscia_RIC_292_G.jpg,_siscia_RIC_292_G.txt
 28,Vetranio,_siscia_RIC_292,Copper,,,AD,350.0,['PF'],_siscia_RIC_292.jpg,_siscia_RIC_292.txt
-29,Vetranio,_siscia_RIC_294,Copper,,18.0,BC,-118.0,['PF'],_siscia_RIC_294.jpg,_siscia_RIC_294.txt
-30,Vetranio,_siscia_RIC_294_B,Copper,,18.0,BC,-118.0,['PF'],_siscia_RIC_294_B.jpg,_siscia_RIC_294_B.txt
-31,Vetranio,_siscia_RIC_294_G,Copper,,18.0,BC,-118.0,['PF'],_siscia_RIC_294_G.jpg,_siscia_RIC_294_G.txt
-32,Vetranio,_siscia_RIC_294_E,Copper,,18.0,BC,-118.0,['PF'],_siscia_RIC_294_E.jpg,_siscia_RIC_294_E.txt
 35,Vetranio,_thessalonica_RIC_126_A,Copper,,24.0,AD,350.0,['PF'],_thessalonica_RIC_126_A.jpg,_thessalonica_RIC_126_A.txt
 36,Vetranio,_thessalonica_RIC_126_D,Copper,,24.0,AD,350.0,['PF'],_thessalonica_RIC_126_D.jpg,_thessalonica_RIC_126_D.txt
 37,Vetranio,_thessalonica_RIC_131.1,Copper,,,AD,350.0,['PF'],_thessalonica_RIC_131.1.jpg,_thessalonica_RIC_131.1.txt
